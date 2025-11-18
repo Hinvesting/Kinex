@@ -1,0 +1,26 @@
+:root {
+  --bg: #0b0f13;
+  --card: #121821;
+  --text: #e6edf3;
+  --muted: #93a1b1;
+  --primary: #4cc9f0;
+}
+
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; }
+body { margin: 0; background: var(--bg); color: var(--text); font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; }
+
+.container { max-width: 900px; margin: 0 auto; padding: 24px; }
+header { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+nav a { color: var(--muted); margin-left: 12px; text-decoration: none; }
+nav a:hover { color: var(--text); }
+
+main { margin-top: 24px; }
+
+.card { background: var(--card); padding: 20px; border-radius: 10px; box-shadow: 0 8px 24px rgba(0,0,0,0.2); }
+form { display: grid; gap: 12px; }
+label { display: grid; gap: 6px; font-size: 14px; color: var(--muted); }
+input { padding: 10px 12px; border-radius: 8px; border: 1px solid #253044; background: #0e141b; color: var(--text); }
+button { padding: 10px 14px; border-radius: 8px; border: none; background: var(--primary); color: #001018; font-weight: 600; cursor: pointer; }
+button[disabled] { opacity: 0.6; cursor: default; }
+.message { margin-top: 10px; color: var(--primary); }
